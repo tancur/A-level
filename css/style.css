@@ -1,0 +1,49 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+       /*level-1*/
+
+.green-cover {height: 600px;
+              width: 600px; 
+              background-color: #0d5825; font-size: 25px; color: antiquewhite;
+              text-align: center; line-height: 30px;
+              padding-top: 20px; margin-top: 50px; margin-left: 50px; margin-bottom: 50px;}
+
+.image {position: relative ;  margin-top: 0px;}
+
+.image img {width: 150px; float: left; }  
+
+
+
+.z-0 {position: absolute ; z-index: 1; left: calc(50% - 75px); top: 100px; transform: rotate(-5deg);}
+.z-1 {position: absolute ; z-index: 0; left: calc(50% - 130px); top: 100px; transform: rotate(-15deg);}
+.z-2 {position: absolute ; z-index: 1; left: calc(50% - 15px); top: 110px; transform: rotate(10deg)}
+
+.image img:hover {transform: translateY(-25px); transition-duration: 2s; transition-timing-function: ease; }
+
+
+        /*Level-2*/
+
+    .level-2 { margin-left: 50px; margin-top: 50px; } 
+
+    .level-2 div {height: 200px; width: 200px; position: relative; }
+
+    .level-2-red {background-color: brown;  top: 0; left: 0;}
+    .level-2-violet {background-color: blueviolet; top: -100px; left: 100px; z-index: 1;}
+    .level-2-green {background-color: rgb(120, 223, 79); top: -200px; left: 200px;}
+    
+
+/*level-4*/
+
+
+.crazy-element {width: 300px; height: 300px;}
+
+.level-4 {width: 100px; height: 100px; }
+
+    @keyframes level-4 {
+    from { background-color: red; }
+    25% {transform: translate(0, 200px); background-color: blue;}
+    50% {transform: translate(200px, 200px); background-color: green;} 
+    75% {transform: translate(200px, 0px); background-color: yellow;}
+    to {transform: translate(0, 0); background-color: red;} 
+      }
+.level-4 {animation: level-4 5s ease-in 1s infinite forwards;}
